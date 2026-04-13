@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+class employee (ABC):
+    @abstractmethod
+    def start(seelf):
+        pass
+
+class developer(employee):
+    def start (self):
+        print("developer salary credited")
+
+class manager(employee):
+    def start (self):
+        print("manager is credited")
+ 
+s=developer()
+s.start()
+
+c=manager()
+c.start()
+
